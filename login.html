@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>LogIn Page</title>
+    <link href="src/style.css" rel="stylesheet" type="text/css" />
+    <script src="src/script.js"></script>
+  </head>
+
+  <style>
+    body {
+      font-family: "Josefin Sans", sans-serif;
+    }
+    form {
+      border: 3px solid #f1f1f1;
+      border-radius: 2%;
+    }
+  </style>
+
+  <body>
+    <!-- header section starts -->
+    <div class="hero">
+      <nav>
+        <h2 class="logo">FitAsA<span>Fiddle</span></h2>
+        <ul>
+          <li><a href="index.html">About Me</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="contactMe.html">Contact Me</a></li>
+          <li><a href="registrationPage.html">Registration</a></li>
+        </ul>
+      </nav>
+    </div>
+    <h2>Login Form</h2>
+
+    <form action="/action_page.php" method="post">
+      <div class="container">
+        <label for="uname"><b>Email address</b></label>
+        <input type="text" placeholder="Enter Email" name="uname" required />
+
+        <label for="psw"><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="psw"
+          required
+        />
+
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember" /> Remember
+          me
+        </label>
+      </div>
+
+      <div class="container" style="background-color: #f1f1f1">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+    <!-- Footer start -->
+    <footer>
+      <p>Fit As a Fiddle</p>
+      <p>On becoming Fit</p>
+    </footer>
+  </body>
+</html>

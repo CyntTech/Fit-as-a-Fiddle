@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>About Me</title>
+    <link href="src/style.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+
+  <body>
+    <!-- header section starts -->
+    <div class="hero">
+      <nav>
+        <h2 class="logo">FitAsA<span>Fiddle</span></h2>
+        <ul>
+          <li><a href="index.html">About Me</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="contactMe.html">Contact Me</a></li>
+          <li><a href="registrationPage.html">Registration</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main">
+      <img src="src/images/pexels-element-digital-775032.jpg"/>
+      <div class="about-text">
+        <h2 class="unit-title">Feel Great.<br> Body and Mind.</h2>
+        <p class="unit-body hero">Choose from hundreds of workouts, healthy recipes,
+            relaxing meditations, and expert articles, for a whole body and mind
+            approach to feeling great.</p>
+        </div>
+        <a href="contactMe.html" class="button">Join Now</a>
+      </div>
+    </div>
+    <div>
+     <picture class="unit-image">
+          <source type="image/webp" srcset="
+                  https://cloudfront.fitnessblender.com/assets/img/homepage/team-1440.webp 1440w,
+          https://cloudfront.fitnessblender.com/assets/img/homepage/team-720.webp 720w
+        " sizes="(max-width: 940px) 100vw, 50vw">
+      
+          <source type="image/png" srcset="
+                        https://cloudfront.fitnessblender.com/assets/img/homepage/team-1440.png 1440w,
+            https://cloudfront.fitnessblender.com/assets/img/homepage/team-720.png 720w
+          " sizes="(max-width: 940px) 100vw, 50vw">
+        <img src="https://cloudfront.fitnessblender.com/assets/img/homepage/team-1440.png" alt="Fitness Blender trainer group picture" width="910" height="910">
+  </picture>
+    </div>
+    <!-- Footer start -->
+    <footer>
+      <p>Fit As a Fiddle</p>
+      <p>
+       On becoming Fit
+      </p>
+    </footer>
+    <script src="src/script.js"></script>
+  </body>
+</html>
