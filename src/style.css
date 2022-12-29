@@ -8,6 +8,17 @@
 .hero {
   background-color: #d1d0cf;
 }
+
+.login {
+  margin-left: 200px;
+  
+
+}
+
+.reg {
+  padding-left: 10px;
+}
+
 .main img {
   height: auto;
   width: 420px;
@@ -63,7 +74,7 @@
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   padding-top: 45px;
   padding-left: 8%;
   padding-right: 8%;
@@ -84,18 +95,17 @@ nav ul li {
   align-items: flex-end;
 }
 nav ul li a {
-  background-color: #1e59ff;
-  color: white;
+  color: red;
+  font-size: 26px;
   text-decoration: none;
   border: 2px solid transparent;
-  border-radius: 30px;
   font-weight: bold;
-  padding: 10px 25px;
+  padding: 10px 2px;
   transition: 0.4s;
 }
 nav ul li a:hover {
   background: transparent;
-  border: 2px solid #1e59ff;
+  border: 2px solid #280df2;
   cursor: pointer;
 }
 footer {
