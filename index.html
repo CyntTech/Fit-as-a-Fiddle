@@ -3,14 +3,24 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>About Me</title>
+    <title>Fit as a Fiddle</title>
     <link href="src/style.css" rel="stylesheet" type="text/css" />
+    <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+    crossorigin="anonymous"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
+    crossorigin="anonymous"></script>
+    
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
       crossorigin="anonymous"
     />
+    
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link
       rel="stylesheet"
@@ -21,52 +31,233 @@
 
   <body>
     <!-- header section starts -->
-    <div class="hero">
+    <div class="begin">
       <nav>
-        <h2 class="logo">Fit As A <span>FIDDLE</span></h2>
+        <form class="d-flex">
+          <h2 class="title">Fit As A <span style="color:green">FIDDLE</span></h2>
+          <div class="search_bar">
+            <input type="search" class="form-control" placeholder="Search">
+          </div>
+          <button type="button" class="btn btn-success btn-sm">Search..</button>
+        </form>
         <ul>
-          <li><a href="index.html">About Me</a></li>
-          <li><a href="login.html">Login</a></li>
-          <li><a href="contactMe.html">Contact Me</a></li>
-          <li><a href="registrationPage.html">Registration</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="login_margin"><a href="login.html">Login</a></li>
+          <li class="reg"><a href="registrationPage.html">Registration</a></li>
         </ul>
+      
       </nav>
     </div>
-    <div class="main">
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div class="jumbotron-fluid">
+            <h3 class="display-4">On becoming Fit!</h3>
+            <p class="lead">Change your diet, Change your Body, Change your Life.
+              We got everything you need for a healthy lifestyle.</p>
+            <hr class="my-4">
+            <p>This Fitness website will outline how to obtain and understand the concepts of healing through natural remedies, workout and nutrition.</p>
+            <p class="lead">
+              <a class="btn btn-success btn-lg" href="about.html" role="button">Learn more</a>
+            </p>
+          </div>
+        </div> 
+        <div class="col-8">
+          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="src/images/diff fruits.jpg" class="d-block w-100" alt="src/images/fruitlady2.jpg">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Fruit Dieting</h5>
+                  <p>For improved skin health.</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="src/images/pexels-pixabay-416778.jpg" class="d-block w-100" alt="src/images/diff fruits.jpg">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Workout</h5>
+                  <p>Keeping the body fit.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="src/images/ladywithfruits.jpg" class="d-block w-100" alt="slide1.jpg">
+                <div class="carousel-caption d-none d-md-block color:white">
+                  <h5>Fruit Dieting</h5>
+                  <p>For improved skin health.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <img class="remedies_img" src="src/images/natural1.jpg">
+            <h2 class="remedies_text"><a href="#">Natural Remedies</a></h2>
+          </div>
+          
+            <div class="col-4">
+              <img class="gym_img" src="src/images/gym1edit.jpg">
+              <h2 class="gym_text"><a href="#">GYM</a></h2>
+            </div>
+            
+              <div class="col-4">
+              <img class="nutri_img" src="src/images/nutri2edit.jpg">
+              <h2 class="nutri_text"><a href="#">Nutrition</a></h2>
+            </div>
+
+        </div>
+      </div>
+      </div>
+
+      <div class="container">
+        <div class="jumbotron">
+          <div class="row">
+              <div class="col-6">
+                <img src="src/images/walk2.jpg" class="walk-img">
+              </div>
+              <div class="col-6">
+                <h2 class="feel-text">Feel Great.<br> Body and Mind.</h2>
+                  <p>Choose from hundreds of workouts, healthy recipes,
+                    relaxing meditations, and expert articles, for a whole body and mind
+                    approach to feeling great.</p>
+                    <a href="services.html" button type="button" class="btn btn-secondary btn-block">Learn more...</button></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="container">
+        <div class="testimony">
+          <div class="testimonyh1">Testimonials <br> 
+            <p class="client">What our clients are saying about us...</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3">
+            "Kc"
+            <p>
+              The natural remedies worked as 
+              prescribed.
+            </p>
+          </div>
+          <div class="col-3">
+            "Hope"
+            <p>
+              I thought i will never get out of this 
+              obesity but trying out some of the workouts 
+              worked like magic.
+            </p>
+          </div>
+          <div class="col-3">
+            "Kingsley"
+            <p>
+              I was almost drowning with sleepless night 
+              thanks to the natural remedies prescribed
+            </p>
+          </div>
+          <div class="col-3">
+            "Cynthia"
+            <p>
+              looking fit has always been my priority, 
+              i tried the workout routines and i got 
+              result as expected.
+            </p>
+          </div>
+
+        </div>
+    </div>
+
+    
+
+
+    <!--<div class="main">
       <img src="src/images/pexels-element-digital-775032.jpg"/>
       <div class="about-text">
-        <h2 class="unit-title">Feel Great.<br> Body and Mind.</h2>
-        <p class="unit-body hero">Choose from hundreds of workouts, healthy recipes,
-            relaxing meditations, and expert articles, for a whole body and mind
-            approach to feeling great.</p>
+        
         </div>
-        <a href="contactMe.html" class="button">Join Now</a>
+        <a href="contact.html" class="button">Join Now</a>
       </div>
-    </div>
-    <div>
-     <picture class="unit-image">
-          <!--<source type="image/jpg" srcset="
-                  https://cloudfront.fitnessblender.com/assets/img/homepage/tummy2.jpg 1440w,
-          https://cloudfront.fitnessblender.com/assets/img/homepage/benefits.jpg 720w
-        " sizes="(max-width: 940px) 100vw, 50vw">
-      
-          <source type="image/jpg" srcset="
-                        https://cloudfront.fitnessblender.com/assets/img/homepage/tummy2.jpg 1440w,
-            https://cloudfront.fitnessblender.com/assets/img/homepage/benefits.jpg 720w
-          " sizes="(max-width: 940px) 100vw, 50vw">-->
-        <img src="src/images/tummy2.jpg" class="rounded mx-auto d-block rounded-circle" alt="src/images/benefits.jpg" width="920" height="700">
-  </picture>
-    </div>
-    <!-- Footer start -->
-    <footer>
-      <p>FIT AS A FIDDLE</p>
-      <p>
-       <h3>On becoming Fit
-      </p>
-      <p>
-        <h5><br><span style="color:red"> Change your diet,</span> Change your Body, <span style="color:red"> Change your Life.</span><br>
-          <span style="color:blue"> We got everything you need for a healthy life.</span></h5></h5>
-      </p>
+    </div>-->
+    
+     
+    <!-- Starting of Footer -->
+    <footer class="foot">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-4">
+            <p>
+              Subscribe to our Newsletter by entering your email below<br>
+                <input type="text" placeholder="Enter email">
+                <button type="button" class="btn btn-info sub-btn">Subscribe</button>
+              
+            </p>  
+          </div>
+          <div class="col-4">
+            <div class="row">
+              <div class="col-6">
+                <ul class="unordered">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="service.html">Services</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>                
+              </div>
+              <div class="col-6">
+                <ul class="unordered2">
+                  <li><a href="career.html">Career</a></li>
+                  <li><a href="FAQ.html">FAQ</a></li>
+                  <li><a href="community.html">Community</a></li>
+                  <li><a href="t&c.html">Terms & Conditions</a></li>
+                </ul>                
+              </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="row">
+                <div class="col-6">
+                  <p>
+                    OUR WORKING DAYS:<br>
+                     Monday-Friday<br>
+                     Saturday<br>
+                     Sunday
+                     </p>
+                </div>
+                <div class="col-6">
+                  CONTACT US<br>
+                  <i class="fa-solid fa-phone"></i>+44 7708 664 317<br> <i class="fa-solid fa-phone"></i>+234 8062 814 546<br> <i class="fa-solid fa-phone"></i>+234 8103 336 800 
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+          </div>
+          <div class="icons">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-telegram"></i>
+            
+          </div>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="src/script.js"></script>
   </body>
