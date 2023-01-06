@@ -59,7 +59,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px;
+  margin-top: 60px;
   
 }
 
@@ -129,39 +129,57 @@ text-align: center;
 .sub-btn {
   height: 30px;
   margin-bottom: 6px;
-  
-
 }
 
-
 .col-4 {
-  margin-top: 60px;
+  padding-top: 20px;
 }
 
 .unordered {
-  padding-left: 90px;
+  padding-right: 35px;
   text-align: right;
-
 }
+
+.unordered2 {
+  padding-left: 1px;
+}
+
 
 .unordered, .unordered2 {
   list-style-type: none;
   font-size: 20px;
-  
-
+  line-height: 1.6;
 }
 
-.unordered li a, .unordered2 li a{
+
+
+  .unordered li a, .unordered2 li a {
   text-decoration: none;
   color: black;
-  
-
 }
+
+.days {
+  
+}
+
 
 .fa-solid {
   width: 100px;
   height: 40px;
   border-color: cadetblue;
+  line-height:1.6;
+}
+
+.icons {
+  margin-left: 600px;
+}
+
+.fa-facebook {
+  margin-left: 40px;
+}
+
+.fa-telegram {
+  margin-left: 40px;
 }
 
 /*.main img {
