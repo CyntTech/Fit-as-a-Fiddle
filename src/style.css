@@ -22,11 +22,6 @@
   margin-left: 1px;
   margin-top: 3px;
   
-  
-  
-  
-  
-  
 }
 .login_margin {
   padding-left: 450px;
@@ -63,21 +58,14 @@
   
 }
 
-.remedies_text {
+.remedies_text, .gym_text, .nutri_text {
 text-align: center;
 }
 
-.gym_text {
-  text-align: center;
-}
-
-.nutri_text {
-  text-align: center;
-}
-
-.walk-img{
+.walk-img {
   margin-top: 50px;
 }
+
 .feel-text {
   margin-top: 150px;
   text-align: center;
@@ -94,6 +82,8 @@ text-align: center;
   margin-top: 80px;
   line-height: 320%;
   text-align: center;
+  background-color: whitesmoke;
+  padding-top: 15px;
   
 }
  .testimonyh1 {
@@ -119,6 +109,51 @@ text-align: center;
   background-color: powderblue;
   color: black;
 }
+
+
+.team {
+  text-align: center;
+  background-image: url("https://images.unsplash.com/photo-1556262298-e85892643712?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTYyfHxiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.team-title {
+  margin-top: 60px;
+  margin-left: 5px;
+  
+}
+
+.team1, .team2, .team3 {
+  margin-left: 50px;
+  background-color: coral;
+  color: black;
+  display: inline;
+  border-radius: 5px;
+  font-weight: 5px;
+  padding: 5px 5px;
+  line-height: 1.6;
+}
+
+.github, .linkedin {
+  margin-left: 20px;
+}
+
+.col-md-4, .col-sm-6, .col-xs-12 {
+  
+
+}
+
+
+.ogonna {
+  margin-top: 60px;
+}
+
+.cynthia {
+  margin-top: 60px;
+}
+
 
 .foot {
   background-color: #d1d0cf;
@@ -151,9 +186,7 @@ text-align: center;
   line-height: 1.6;
 }
 
-
-
-  .unordered li a, .unordered2 li a {
+.unordered li a, .unordered2 li a {
   text-decoration: none;
   color: black;
 }
@@ -172,6 +205,7 @@ text-align: center;
 
 .icons {
   margin-left: 600px;
+  margin-top: 20px;
 }
 
 .fa-facebook {
