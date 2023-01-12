@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -278,4 +279,286 @@ this.form.signup-password, this.form.confirm-password);">
     </div>
   </footer>
 	</body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Registration Page</title>
+  <link href="src/style.css" rel="stylesheet" type="text/css" />
+  <link 
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+  crossorigin="anonymous"
+  />
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
+  crossorigin="anonymous"></script>
+  
+  <link 
+  rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.3.0/css/all.min.css" integrity="sha512-UJqci0ZyYcQ0AOJkcIkUCxLS2L6eNcOr7ZiypuInvEhO9uqIDi349MEFrqBzoy1QlfcjfURHl+WTMjEdWcv67A==" 
+  crossorigin="anonymous"
+  />
+  <link 
+  rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.3.0/css/fontawesome.min.css" integrity="sha512-OWEPeEG04j/snZLATf+6oMwgOH/D9yjMSQ/7U8+s13tZMoUpKCHcvm5eBeYXkE0dY1J5Bt8h+fapm0AeNrpkvQ==" crossorigin="anonymous" 
+  />
+  <link 
+  rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.3.0/css/regular.min.css" integrity="sha512-gper6pJoNP60/w9vd7TTHG3NF1WWCy7svqTPw1XKmV3NSK1vXjwKRni/24Wvr7rIbVjPHNlwM2rUNuqkdwvOHA==" 
+  crossorigin="anonymous"
+  />
+  <link 
+  rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.3.0/css/solid.min.css" integrity="sha512-eUxd2YUy87FAiBLFa+aZsMC2iAZTKDAWtWoegy3t5CCz/WcB+Ug/bICT9Ifw52o1zdhnnt+lT3IEtpE0V2/9gw==" 
+  crossorigin="anonymous"
+  />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+ <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<script>
+	function regform(form, fname, lname, uid, email, password, conf) {
+ // Check each field has a value
+if (uid.value == ''         || 
+      email.value == ''     || 
+      password.value == ''  || 
+      fname.value == ''     ||
+      lname.value == ''     ||
+      conf.value == '') {
+
+    alert('You must provide all the requested details. Please try again');
+    return false;
+}
+// Check the username
+re = /^\w+$/; 
+if(!re.test(uid.value)) { 
+    alert("Username must contain only letters, numbers and underscores. Please try again"); 
+
+    return false; 
+}
+
+var alphaExp = /^[a-zA-Z\-]+$/;
+if(!fname.value.match(alphaExp)) { 
+    alert("First name must contain only letters and hyphens. Please try again"); 
+
+    return false; 
+}
+
+if(!lname.value.match(alphaExp)) { 
+    alert("First name must contain only letters and hyphens. Please try again"); 
+
+    return false; 
+}
+
+// Check that the password is sufficiently long (min 6 chars)
+if (password.value.length < 6) {
+    alert('Passwords must be at least 6 characters long.  Please try again');
+
+    return false;
+}
+
+// At least one number, one lowercase and one uppercase letter 
+// At least six characters 
+
+var re = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/; 
+if (!re.test(password.value)) {
+    alert('Passwords must contain at least one number, one lowercase and one uppercase letter.  Please try again');
+    return false;
+}
+
+// Check password and confirmation are the same
+if (password.value != conf.value) {
+    alert('Your password and confirmation do not match. Please try again');
+
+    return false;
+}
+
+// Finally submit the form. 
+return true;
+}
+		</script>
+
+<style>
+  *{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+	form {
+		margin: 0 auto;
+		width: 600px;
+		}
+    input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        }
+    input[type=submit] {
+    width: 30%;
+    align-items: center;
+    background-color:#1E59FF;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    }
+
+    input[type=submit]:hover {
+    background-color: #1E59FF;
+    }
+
+    div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    }
+</style>
+
+<body>
+  <!-- header section starts -->
+  <div class="begin">
+    <nav>
+      <form class="d-flex">
+        <h2 class="title">Fit As A <span style="color:green">FIDDLE</span></h2>
+        <div class="search_bar">
+          <input type="search" class="form-control" placeholder="Search">
+        </div>
+        <button type="button" class="btn btn-success btn-sm">Search..</button>
+      </form>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="login_margin"><a href="login.html">Login</a></li>
+        <li class="reg"><a href="registrationPage.html">Registration</a></li>
+      </ul>
+    
+    </nav>
+  </div>
+		<h1 style="text-align: center;">Registration Form</h1>
+    <div>
+		<form action="connect.php" name="registration_form" method="post" onSubmit="return regform(this.form,
+ this.form.first-name, this.form.last-name, this.form.signup-username, this.form.signup-email, 
+this.form.signup-password, this.form.confirm-password);">
+			
+            <p>First Name: <input type="text" id="fname" name="firstname" size="65" placeholder="Your name.."></p>
+			    <br />
+			
+            <p>Last Name: <input type="text" id="lname" name="lastname" size="65" placeholder="Your last name..">
+		        </p>
+			        <br />
+            <p>Phone Number: <input type="text" id="phone" name="phone" size="65" placeholder="Your phone number"></p>
+                <br />
+            <p>Gender:
+				<select type="text" value="" name="Gender">
+					<option>Male</option>
+					<option>Female</option>
+				</select>
+			</p>
+                <br />
+      
+            <p>Country: <input type="text" id="country" size="65" name="Country" placeholder="Yourcontry" /></p>
+                <br />
+      
+            <p>State/Province: <input type="text" size="65" name="State" placeholder="Your state" /></p>
+			    <br />
+			
+            <p>E-mail Address: <input type="text" size="65" name="Email" placeholder="Your e-mail" /></p>
+			    <br />
+			
+            <p>Password: <input type="text" size="65" name="Password" placeholder="Type password" /></p>
+			    <br />
+			<br />
+            
+            <p>Confirm Password: <input type="text" size="65" name="Confirm Password" placeholder="Retype password" /></p>
+            <br />
+        <br />
+        
+			
+        <p>
+				<input type="submit"
+					value="Submit" name="Submit" />
+				<input type="submit"
+					value="Reset" name="Reset" />
+			</p>
+
+		</form>
+    </div>
+  <!-- Footer start -->
+  <footer class="foot">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-4">
+          <p>
+            Subscribe to our Newsletter by entering your email below<br>
+              <input type="text" placeholder="Enter email">
+              <button type="button" class="btn btn-info sub-btn">Subscribe</button>
+          </p>  
+        </div>
+        <div class="col-4">
+          <div class="row">
+            <div class="col-6">
+              <ul class="unordered">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>                
+            </div>
+            <div class="col-6">
+              <ul class="unordered2">
+                <li><a href="career.html">Career</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="t&c.html">Terms & Conditions</a></li>
+              </ul>                
+            </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="row">
+              <div class="col-6">
+                <p>
+                  <h5 class="days">WORKING DAYS:<br></h5>
+                   Monday-Friday<br>
+                   Saturday<br>
+                   Sunday
+                </p>
+              </div>
+              <div class="col-6">
+                <h5>CONTACT US<br></h5>
+                <i class="fa-solid fa-phone" style="font-size: 2rem; color: cornflowerblue;"></i>+44 7708 664 317<br> <i class="fa-solid fa-phone" style="font-size: 2rem; color: cornflowerblue;"></i>+234 8062 814 546<br> <i class="fa-solid fa-phone" style="font-size: 2rem; color: cornflowerblue;"></i>+234 8103 336 800 
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        </div>
+        <div class="icons">
+          <i class="fa-brands fa-twitter" style="font-size: 2rem; color: cornflowerblue;"></i>
+          <i class="fa-brands fa-facebook" style="font-size: 2rem; color: cornflowerblue;"></i>
+          <i class="fa-brands fa-telegram" style="font-size: 2rem; color: cornflowerblue;"></i>
+          
+        </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+	</body>
+>>>>>>> Stashed changes
 </html>
