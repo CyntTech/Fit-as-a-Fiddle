@@ -18,7 +18,7 @@
             values(?, ?, ?, ?, ?, ?, ?, ?, ?)");
         $stmt->bind_param("ssissssss",$firstname, $lastname, $phone, $gender, $country, $state, $email, $password, $confirmPassword);
         $stmt->execute();
-        echo "Registration Successfully..";
+        echo "Registration Successful..";
         $stmt->close();
         $conn->close();
         

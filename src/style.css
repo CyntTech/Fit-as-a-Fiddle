@@ -33,6 +33,15 @@
   padding-left: 10px;
 }
 
+.learn-button {
+  width: 145px;
+  
+}
+
+.outline {
+  line-height: 1.6;
+}
+
 /* starting of Testimonial section */
 .testimony {
   margin-left: 30px;
@@ -317,5 +326,11 @@ span.psw {
     letter-spacing: 2px;
     margin-top: 5%;
     align-items: center;
+  }
+}
+
+@media all and (max-width: 500px) {
+  body {
+    color: whitesmoke;
   }
 }
