@@ -42,6 +42,19 @@
   line-height: 1.6;
 }
 
+.remedies_text {
+  margin-left: 15px;
+}
+
+.gym_text {
+  margin-left: 60px;
+}
+
+.nutri_text {
+  margin-left: 75px;
+
+}
+
 /* starting of Testimonial section */
 .testimony {
   margin-left: 30px;
