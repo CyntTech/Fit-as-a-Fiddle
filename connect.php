@@ -9,8 +9,13 @@
     $Password = $_POST['Password'];
     $ConfirmPassword = $_POST['Confirm Password'];
 
+    $host = "localhost";
+    $username = "root;"
+    $dbpassword  = "";
+    $dbname = "fitness"
+
     //Database connection
-    $conn = new mysqli('localhost','root','','fitness');
+    $conn = new mysqli('$host','$dbusername', '$dbpassword','$dbname');
     if($conn->connect_error){
         die('Connection Failed : '.$conn->connect_error);
     }else{
